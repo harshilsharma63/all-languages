@@ -3,7 +3,7 @@
 build:
 	@make do -s
 
-do: c java golang cpp python ruby
+do: c java golang cpp python ruby bash
 
 c: c.c
 	gcc -o c.out c.c
@@ -30,3 +30,6 @@ python: python.py
 
 ruby: ruby.rb
 	ruby ruby.rb
+
+bash: bash.sh
+	bash bash.sh
