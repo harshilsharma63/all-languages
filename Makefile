@@ -3,7 +3,7 @@
 build:
 	@make do -s
 
-do: c java golang
+do: c java golang cpp
 
 c: c.c
 	gcc -o c.out c.c
@@ -19,3 +19,8 @@ golang: go.go
 	go build go.go
 	./go
 	rm go
+
+cpp: cpp.cpp
+	g++ gpp.gpp -o gpp.out
+	./gpp.out
+	rm rpp.out
