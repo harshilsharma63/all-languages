@@ -3,7 +3,7 @@
 build:
 	@make do -s
 
-do: c java golang cpp
+do: c java golang cpp python
 
 c: c.c
 	gcc -o c.out c.c
@@ -21,6 +21,9 @@ golang: go.go
 	rm go
 
 cpp: cpp.cpp
-	g++ gpp.gpp -o gpp.out
-	./gpp.out
-	rm rpp.out
+	g++ cpp.cpp -o cpp.out
+	./cpp.out
+	rm cpp.out
+
+python: python.py
+	python3 python.py
